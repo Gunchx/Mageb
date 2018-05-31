@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#main {
+    height: 400px;
+    width: 900px;
+    background-color: rgba(27, 35, 71, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.donthave_acc {
+    padding: 60px 90px;
+}
+.have_acc {
+    padding: 80px 80px;
+}
+
+.donthave_acc_title, .have_acc_title {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 200; 
+}
+
+.donthave_acc_title::after, .have_acc_title::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: rgb(73, 171, 254);
+    width: 15%;
+    margin: 20px 0px;
+}
+
+.donthave_acc_text, .have_acc_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+#login, #signup  {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    height: 45px;
+    width: 120px;
+    background-color: transparent;
+    border: solid 2px rgb(73, 171, 254);
+    border-radius: 20px;
+    outline: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#login:hover, #signup:hover {
+    background-color: rgb(73, 171, 254);
+    color: white;
+}
+
+#slider {
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-45%, -50%);
+    z-index: 99;
+}
+
+#signupform, #loginform {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 50px;
+    color: rgb(132, 149, 183);
+}
+#loginform {
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#signupform {
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+}
+#forgotform {
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    border: 0px;
+    outline: none;
+    border-bottom: solid 2px rgb(203, 210, 223);
+    margin: 0px;
+}
+
+#signupform button, #loginform button {
+    height: 45px;
+    width: 130px;
+    background-color: rgb(248, 154, 53);
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+#signupform button:hover, #loginform button:hover {
+    height: 45px;
+    width: 130px;
+    background-color: rgb(248, 191, 53);
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+img#logoS {
+    width: 35px;
+    margin-left: 180px;
+}
+img#logoL {
+    width: 35px;
+    margin-left: 200px;
+}
+
+label {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+label::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: rgb(73, 171, 254);
+    width: 50%;
+    margin: 20px 0px;
+}
+
+input#name{
+    background-image:url(../img/ic_user.jpg);
+    background-repeat:no-repeat;
+    background-position: right 16px; 
+}
+input#name:focus{
+    background-image:url(../img/ic_userAc.jpg);
+    background-repeat:no-repeat;
+    background-position: right 16px; 
+}
+input#email{
+    background-image:url(../img/ic_mail.jpg);
+    background-repeat:no-repeat;
+    background-position: right 16px; 
+}
+input#email:focus{
+    background-image:url(../img/ic_mailAc.jpg);
+    background-repeat:no-repeat;
+    background-position: right 16px; 
+}
+input#password{
+    background-image:url(../img/ic_lock.jpg);
+    background-repeat:no-repeat;
+    background-position: right 16px; 
+}
+input#password:focus{
+    background-image:url(../img/ic_lockAc.jpg);
+    background-repeat:no-repeat;
+    background-position: right 16px; 
+}
+
+.footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(167, 179, 203);
+    font-weight: bold;
+    position:absolute;
+    text-align: center;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+
+
+#sliderW {
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcomeform {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 30px;
+    color: rgb(132, 149, 183);
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.button {
+    height: 45px;
+    width: 130px;
+    display: inline-block;
+    background-color: rgb(248, 154, 53);
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+.button:hover {
+    height: 45px;
+    width: 130px;
+    display: inline-block;
+    background-color: rgb(248, 191, 53);
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+img#logoW {
+    width: 35px;
+    margin-left: 70px;
+}
